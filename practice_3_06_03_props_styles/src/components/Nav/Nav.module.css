@@ -1,0 +1,17 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  list-style: none;
+}
+
+.nav > div {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
