@@ -12,6 +12,21 @@ const UsersContainerSort = () => {
   const sortUsers = () => {
     setUsersList(usersList.slice().sort((a, b) => a.age - b.age));
   };
+  const sortUsersByName = () => {
+    setUsersList(
+      usersList.slice().sort((a, b) => {
+        let nameA = a.firstname.toLowerCase();
+        let nameB = b.firstname.toLowerCase();
+        if (nameA < nameB) {
+          return -1;
+        }
+        if (nameA > nameB) {
+          return 1;
+        }
+        return 0;
+      })
+    );
+  };
 
   return (
     <div className={s.users__container}>
@@ -19,6 +34,7 @@ const UsersContainerSort = () => {
         <User key={elem.id} {...elem} />
       ))}
       <button onClick={sortUsers}>Sort by age</button>
+      <button onClick={sortUsersByName}>Sort by Name</button>
     </div>
   );
 };
