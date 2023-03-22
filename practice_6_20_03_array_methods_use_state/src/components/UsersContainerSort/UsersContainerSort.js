@@ -12,21 +12,27 @@ const UsersContainerSort = () => {
   const sortUsers = () => {
     setUsersList(usersList.slice().sort((a, b) => a.age - b.age));
   };
-  const sortUsersByName = () => {
+
+  // const sortUsersByName = () => {
+  //   setUsersList(
+  //     usersList.slice().sort((a, b) => {
+  //       let nameA = a.firstname.toLowerCase();
+  //       let nameB = b.firstname.toLowerCase();
+  //       if (nameA < nameB) {
+  //         return -1;
+  //       }
+  //       if (nameA > nameB) {
+  //         return 1;
+  //       }
+  //       return 0;
+  //     })
+  //   );
+  // };
+
+  const sortUsersByName = () =>
     setUsersList(
-      usersList.slice().sort((a, b) => {
-        let nameA = a.firstname.toLowerCase();
-        let nameB = b.firstname.toLowerCase();
-        if (nameA < nameB) {
-          return -1;
-        }
-        if (nameA > nameB) {
-          return 1;
-        }
-        return 0;
-      })
+      usersList.slice().sort((a, b) => a.firstname.localeCompare(b.firstname))
     );
-  };
 
   return (
     <div className={s.users__container}>
