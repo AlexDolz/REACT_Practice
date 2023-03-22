@@ -1,0 +1,18 @@
+.triggers {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.triggers__button {
+  width: 100px;
+  height: 60px;
+  border-radius: 10px;
+  border: 1px solid lightcoral;
+  background: lightcoral;
+  color: white;
+  cursor: pointer;
+}
+
+.triggers__button:not(:first-child) {
+  margin-left: 10px;
+}

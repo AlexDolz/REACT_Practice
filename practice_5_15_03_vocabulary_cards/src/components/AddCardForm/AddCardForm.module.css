@@ -1,0 +1,27 @@
+.card__form {
+  margin: 50px 0 50px 0;
+}
+
+.card__form input {
+  padding-left: 10px;
+}
+.input {
+  width: 220px;
+  height: 25px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.input:not(:first-child) {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.form__button {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid lightcoral;
+  background: lightcoral;
+  color: white;
+  cursor: pointer;
+}
