@@ -1,10 +1,14 @@
 import s from './Triggers.module.css';
 
-const Triggers = () => {
+const Triggers = ({ changeToEng, changeToRus }) => {
   return (
     <div className={s.triggers}>
-      <button className={s.triggers__button}>ENG</button>
-      <button className={s.triggers__button}>RUS</button>
+      <button className={s.triggers__button} onClick={changeToEng}>
+        ENG
+      </button>
+      <button className={s.triggers__button} onClick={changeToRus}>
+        RUS
+      </button>
     </div>
   );
 };

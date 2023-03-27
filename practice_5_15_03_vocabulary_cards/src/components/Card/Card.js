@@ -1,6 +1,6 @@
 import styles from './Card.module.css';
 
-function Card({ rus, eng, lang }) {
+function Card({ rus, eng, lang, id, changeCardsLang, removeCard }) {
   const word = lang === 'eng' ? eng : rus;
 
   const cardStyles = {
@@ -8,7 +8,12 @@ function Card({ rus, eng, lang }) {
     backgroundColor: lang === 'rus' ? 'white' : 'lightseagreen',
   };
   return (
-    <div className={styles.word__card} style={cardStyles}>
+    <div
+      onClick={() => changeCardsLang(id)}
+      onDoubleClick={() => removeCard(id)}
+      className={styles.word__card}
+      style={cardStyles}
+    >
       {word}
     </div>
   );
