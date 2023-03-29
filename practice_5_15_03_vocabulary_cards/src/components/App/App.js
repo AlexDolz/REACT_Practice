@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import AddCardForm from '../AddCardForm/AddCardForm';
 import CardsContainer from '../CardsContainer/CardsContainer';
 import { words } from '../../data/words';
@@ -51,6 +51,18 @@ function App() {
   const removeCard = id => {
     setCards(cards.filter(elem => elem.id !== id));
   };
+
+  // ------------- useEffect + localStorage
+  // 14. Реализовать сохранение изменений состояния в браузере (localStorage)
+
+  useEffect(() => {
+    let newCards = JSON.parse(localStorage.getItem('cards')) || cards;
+    setCards(newCards); // pri perezagruzke state iz localStorage. Vtoroj argument state otslezivat ne nuzno, funkcija otrabotajet odin raz pri perezagruzke stranice
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem('cards', JSON.stringify(cards));
+  }, [cards]); // sohraniajem state v localStorage, vtoroj argument- otslezivanije izmenenij state
 
   return (
     <div>
