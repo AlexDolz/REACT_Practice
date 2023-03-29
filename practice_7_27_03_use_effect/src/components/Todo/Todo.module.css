@@ -1,0 +1,7 @@
+.todo__item {
+  border: 1px solid goldenrod;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
