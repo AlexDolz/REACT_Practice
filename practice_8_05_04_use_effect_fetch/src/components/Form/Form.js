@@ -4,7 +4,7 @@ import { addProductsReq } from '../../requests/productsReq';
 
 const formSubmit = event => {
   event.preventDefault();
-  const [title, price, description] = event.target;
+  const { title, price, description } = event.target;
 
   const newProduct = {
     title: title.value,
