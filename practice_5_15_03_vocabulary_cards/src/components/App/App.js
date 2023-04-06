@@ -3,6 +3,7 @@ import AddCardForm from '../AddCardForm/AddCardForm';
 import CardsContainer from '../CardsContainer/CardsContainer';
 import { words } from '../../data/words';
 import Triggers from '../Triggers/Triggers';
+import './App.css';
 
 // 6. Создать компонент формы (два инпута и кнопка), которая собирает рус и англ слово, формирует из этих данных объект и выводит объект в консоль
 
