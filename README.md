@@ -10,3 +10,4 @@
 - [Practice-6_20_03_useState_array_methods](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_6_20_03_array_methods_use_state)
 - [Practice-7_27_03_fetch_useEffect](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_7_27_03_use_effect)
 - [Practice-8_05_04_useEffect_fetch_GET_POST](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_8_05_04_use_effect_fetch)
+- [homework_08_04_fetch_cards_GET_POST](https://github.com/AlexDolz/REACT_Practice/tree/main/homework_08_04_fetch_cards)
