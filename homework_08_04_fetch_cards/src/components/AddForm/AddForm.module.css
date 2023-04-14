@@ -1,0 +1,51 @@
+.add__form__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.add__form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  padding: 0 20px;
+}
+
+input {
+  height: 27px;
+  padding-left: 10px;
+  border-radius: 10px;
+  border: 1px solid cornflowerblue;
+}
+
+input::placeholder {
+  color: cornflowerblue;
+}
+
+button {
+  width: 177px;
+  margin-top: 20px;
+  height: 32px;
+  cursor: pointer;
+  border-radius: 10px;
+  border-style: none;
+  font-weight: bold;
+  background-color: #f4f200;
+  background-image: -moz-linear-gradient(top, #fff 0%, #f4f200 100%);
+  background-image: -webkit-linear-gradient(top, #fff 0%, #f4f200 100%);
+  background-image: linear-gradient(to bottom, #fff 0%, #f4f200 100%);
+  background-size: 300px;
+  background-repeat: no-repeat;
+  background-position: 0%;
+  -webkit-transition: background 300ms ease-in-out;
+  transition: background 300ms ease-in-out;
+}
+
+button:hover {
+  background-position: -200%;
+  transition: background 300ms ease-in-out;
+}
