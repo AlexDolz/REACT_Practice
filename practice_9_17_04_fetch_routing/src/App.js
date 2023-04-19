@@ -1,10 +1,11 @@
 import React from 'react';
 import NavMenu from './components/NavMenu/NavMenu';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import MainPage from './components/Pages/MainPage/MainPage';
 import ProductsPage from './components/Pages/ProductsPage/ProductsPage';
 import UsersPage from './components/Pages/UsersPage/UsersPage';
 import './App.css';
+import RolePage from './components/Pages/RolePage/RolePage';
 
 // 1. Создать три страницы - MainPage, UsersPage, ProductsPage
 // 2. Создат компонент NavManu (Main, Products, Users), стилизовать его
@@ -30,6 +31,7 @@ const App = () => {
         <Route path='/' element={<MainPage />} />
         <Route path='/products' element={<ProductsPage />} />
         <Route path='/users' element={<UsersPage />} />
+        <Route path='/users/:role' element={<RolePage />} />
       </Routes>
     </div>
   );
