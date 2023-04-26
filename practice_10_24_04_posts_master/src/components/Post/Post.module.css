@@ -16,3 +16,9 @@
   top: 10px;
   right: 15px;
 }
+
+.x__mark {
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+}

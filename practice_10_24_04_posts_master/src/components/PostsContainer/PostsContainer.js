@@ -8,9 +8,11 @@ const PostsContainer = () => {
 
   return (
     <div>
-      {posts.map((elem, index) => (
-        <Post key={index} {...elem} />
-      ))}
+      {posts.length === 0 ? (
+        <p className={s.modal__post}>Постов нет</p>
+      ) : (
+        posts.map((elem, index) => <Post key={index} {...elem} />)
+      )}
     </div>
   );
 };

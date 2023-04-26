@@ -3,6 +3,7 @@ import './App.css';
 import { posts_data } from './data/posts_data';
 import PostsContainer from './components/PostsContainer/PostsContainer';
 import { Context } from './context';
+import AddPostForm from './components/AddPostForm/AddPostForm';
 
 // 1. Создать Post и PostsContainer
 // 2. Создать в App состояние posts (+setPosts)
@@ -19,6 +20,26 @@ import { Context } from './context';
 // 12. Добавить к посту крестик
 // 13. Реализовать удаление поста при клике на крестик
 
+// 14. Если карточек нет, то вывести сообщение "Постов нет"
+
+// 15. Создать компонент AddPostForm (два инпута + кнопка), импортировать его в App
+// 16. Научить форму при сабмите собирать данные (title, description) и формировать из этих данных объект
+
+// Пример объекта:
+
+// {
+//   id: уникальный,
+//   title: из инпута,
+//   description: из инпута,
+//   like: false,
+//   comments: []
+// }
+
+// 17. Вывести в консоль сформированный объект
+
+// ДЗ
+// 18. Написать функцию, принимающую в качестве аргумента сформированный объект и добавляющую ее в состояние posts => вызвать функцию при сабмите формы
+
 const App = () => {
   let [posts, setPosts] = useState(posts_data);
 
@@ -31,9 +52,15 @@ const App = () => {
     setPosts([...posts]);
   };
 
+  const removePost = id => {
+    const updatedPost = posts.filter(elem => elem.id !== id);
+    setPosts(updatedPost);
+  };
+
   return (
     <div>
-      <Context.Provider value={{ posts, changeLike }}>
+      <Context.Provider value={{ posts, changeLike, removePost, setPosts }}>
+        <AddPostForm />
         <PostsContainer />
       </Context.Provider>
     </div>

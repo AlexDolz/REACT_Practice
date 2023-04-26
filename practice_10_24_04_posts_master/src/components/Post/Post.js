@@ -2,9 +2,11 @@ import React from 'react';
 import s from './Post.module.css';
 import { useContext } from 'react';
 import { Context } from '../../context';
+import CommentsContainer from '../CommentsContainer/CommentsContainer';
+import { RxCross2 } from 'react-icons/rx';
 
-const Post = ({ id, title, description, like }) => {
-  const { changeLike } = useContext(Context);
+const Post = ({ id, title, description, like, comments }) => {
+  const { changeLike, removePost } = useContext(Context);
 
   const textLike = like ? 'Liked' : 'Like?';
 
@@ -15,6 +17,7 @@ const Post = ({ id, title, description, like }) => {
 
   return (
     <div className={s.post__item}>
+      <RxCross2 onClick={() => removePost(id)} className={s.x__mark} />
       <h2>{title}</h2>
       <p>{description}</p>
       <div
@@ -24,6 +27,7 @@ const Post = ({ id, title, description, like }) => {
       >
         {textLike}
       </div>
+      <CommentsContainer comments={comments} />
     </div>
   );
 };
