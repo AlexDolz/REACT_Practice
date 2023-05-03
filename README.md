@@ -12,4 +12,4 @@
 - [Practice-8_05_04_useEffect_fetch_GET_POST](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_8_05_04_use_effect_fetch)
 - [Homework_08_04_fetch_cards_GET_POST](https://github.com/AlexDolz/REACT_Practice/tree/main/homework_08_04_fetch_cards)
 - [Practice-10_24_04_posts_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_10_24_04_posts_master)
-- [Practice-11_03_05_teams\_\_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_11_03_05_teams_master)
+- [Practice-11_03_05_teams_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_11_03_05_teams_master)
