@@ -1,0 +1,15 @@
+.nav__menu {
+  height: 100px;
+  background: #2980b9;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__menu a {
+  text-decoration: none;
+  color: white;
+  margin: 0 20px;
+  font-size: 20px;
+}

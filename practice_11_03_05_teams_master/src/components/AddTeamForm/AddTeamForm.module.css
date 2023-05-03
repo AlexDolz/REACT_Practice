@@ -1,0 +1,28 @@
+.container {
+  width: 80%;
+  padding: 30px;
+  border: 3px solid #27ae60;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.team__form {
+  display: grid;
+  grid-auto-rows: 30px;
+  gap: 20px;
+}
+.team__form input {
+  padding: 5px;
+}
+
+.team__form button {
+  color: white;
+  background-color: #27ae60;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+.container p {
+  margin-bottom: 5px;
+}
