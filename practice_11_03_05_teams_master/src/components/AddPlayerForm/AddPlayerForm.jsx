@@ -4,13 +4,21 @@ import Select from 'react-select';
 import { Context } from '../../context/Context';
 
 const AddPlayerForm = () => {
-  const { teams } = useContext(Context);
+  const { teams, addPlayer } = useContext(Context);
 
   const onSubmit = event => {
     event.preventDefault();
     const { player, team } = event.target;
 
-    console.log(player.value, team.value);
+    addPlayer(
+      {
+        id: Date.now(),
+        firstname: player.value,
+        team: team.value,
+      },
+      team.value
+    );
+
     event.target.reset();
   };
 
