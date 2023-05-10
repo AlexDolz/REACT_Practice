@@ -13,3 +13,4 @@
 - [Homework_08_04_fetch_cards_GET_POST](https://github.com/AlexDolz/REACT_Practice/tree/main/homework_08_04_fetch_cards)
 - [Practice-10_24_04_posts_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_10_24_04_posts_master)
 - [Practice-11_03_05_teams_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_11_03_05_teams_master)
+- [Practice-12_10_05_redux](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_12_10_05_redux)
