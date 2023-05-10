@@ -1,0 +1,26 @@
+.add__product__form {
+  margin-top: 20px;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.add__product__form input {
+  padding: 5px;
+  border: 2px solid cadetblue;
+  border-radius: 5px;
+}
+.add__product__form button {
+  padding: 7px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background: cadetblue;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+.add__product__form button:hover {
+  background: rgba(95, 158, 160, 0.637);
+  color: black;
+}

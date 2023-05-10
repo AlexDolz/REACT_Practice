@@ -1,0 +1,10 @@
+.product__item {
+  border: 1px solid cadetblue;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(95, 158, 160, 0.922);
+  color: white;
+}
