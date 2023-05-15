@@ -14,3 +14,4 @@
 - [Practice-10_24_04_posts_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_10_24_04_posts_master)
 - [Practice-11_03_05_teams_master](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_11_03_05_teams_master)
 - [Practice-12_10_05_redux](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_12_10_05_redux)
+- [Practice-13_15_05_card_redux](https://github.com/AlexDolz/REACT_Practice/tree/main/practice_13_15_05_shopping_cart_redux)
