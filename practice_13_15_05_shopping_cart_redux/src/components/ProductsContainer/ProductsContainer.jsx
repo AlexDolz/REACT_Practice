@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './ProductsContainer.module.css';
 import { useSelector } from 'react-redux';
-import ProductItem from '../../ProductItem/ProductItem';
+import ProductItem from '../ProductItem/ProductItem';
 
 const ProductsContainer = () => {
   const productsState = useSelector(store => store.products);

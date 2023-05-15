@@ -19,7 +19,7 @@ const AddProductForm = () => {
   };
 
   return (
-    <form onSubmit={onSubmit}>
+    <form onSubmit={onSubmit} className={s.form}>
       <input type='text' placeholder='Title' name='title' />
       <input type='text' placeholder='Price' name='price' />
       <button>Add product</button>

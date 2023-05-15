@@ -1,0 +1,10 @@
+.cart__title {
+  border-bottom: 2px dotted cadetblue;
+}
+.cart__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
