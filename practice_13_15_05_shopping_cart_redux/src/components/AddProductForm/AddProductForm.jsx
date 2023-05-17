@@ -11,7 +11,7 @@ const AddProductForm = () => {
 
     const newProduct = {
       title: title.value,
-      price: price.value,
+      price: +price.value,
     };
 
     dispatch(addProductAction(newProduct));

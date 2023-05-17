@@ -10,3 +10,13 @@
   background-color: rgba(95, 158, 160, 0.922);
   color: white;
 }
+
+.cart__item__btns {
+  display: flex;
+  gap: 5px;
+}
+
+.cart__item button {
+  cursor: pointer;
+  padding: 6px 8px;
+}
